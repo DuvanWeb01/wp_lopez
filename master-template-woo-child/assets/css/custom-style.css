@@ -29,6 +29,16 @@ p, input, textarea, .top-footer a, #lp-contact ul a, #lp-beneficios ul span, .lp
   line-height: 2.7em !important;
 }
 
+.header-title {
+  color: #FFF212;
+  letter-spacing: 12px;
+}
+.header-title .title-divider {
+  border: 1px solid #FFF212;
+  width: 100px;
+  margin: 0 auto;
+}
+
 .bottom-header .box-buttons-wc {
   display: none;
 }
@@ -878,6 +888,38 @@ p, input, textarea, .top-footer a, #lp-contact ul a, #lp-beneficios ul span, .lp
   padding-left: 0.5em;
   padding-bottom: 0.1em;
   font-family: Futura Bk BT !important;
+}
+
+.lp-subheader-shop {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.lp-subheader-shop .lp-search-form {
+  position: relative;
+  max-width: 450px;
+  margin: 2em auto;
+}
+.lp-subheader-shop .lp-search-form button {
+  color: white;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 50px;
+  border: none;
+  background: transparent;
+}
+.lp-subheader-shop .lp-search-form .form-control {
+  background-color: transparent;
+  border-radius: 25px;
+  border: 2px solid white;
+  padding: 0.5em 1em;
+}
+.lp-subheader-shop .lp-search-form .form-control::placeholder {
+  color: white;
+}
+.lp-subheader-shop p {
+  color: white;
 }
 
 /*# sourceMappingURL=custom-style.css.map */
