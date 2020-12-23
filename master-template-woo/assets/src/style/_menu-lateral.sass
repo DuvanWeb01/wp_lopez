@@ -1,0 +1,44 @@
+.box-menu-lateral
+    position: fixed
+    width: 25%
+    height: 100%
+    top: 0
+    right: -100%
+    background-color: #f8f8f8
+    padding: 2em
+    z-index: 2
+    transition: all .5s
+    .nav
+        margin-top: 1em
+    .menu-item
+        padding: 1em 0
+    &.show-menu
+        right: 0
+    .header
+        display: flex
+        flex-flow: row nowrap
+        justify-content: space-between
+        .box-logo
+            width: 70%
+            .img-brand
+                width: auto
+                max-height: 50px
+                max-width: 100%
+    .nav-item
+        padding: 1em 0
+    .nav-link
+        padding: 0
+        display: inline-flex
+    .box-social-icons
+        position: absolute
+        width: 100%
+        bottom: 0
+        left: 0
+        padding: 1em 2em
+        .nav-item
+            padding: 0 !important
+            .type-link
+                margin: 0
+                margin-right: 2em
+        .text-follow
+            margin: 0

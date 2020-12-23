@@ -1,0 +1,32 @@
+.modal-custom
+    position: fixed
+    width: 100%
+    height: 100%
+    background-color: rgba($color: #000000, $alpha: .7)
+    display: flex
+    flex-flow: row wrap
+    justify-content: center
+    align-items: center
+    z-index: 5
+    opacity: 0
+    transform: translateY(-200%)
+    transition: all 1s
+
+    &.show-modal
+        opacity: 1
+        transform: translateY(0)
+
+#modalSearch
+    .modal-content
+        background-color: transparent
+        border: none
+        width: 100%
+        margin-top: 50%
+
+        .form-control
+            border-top-right-radius: 0px
+            border-bottom-right-radius: 0px
+        .button-master
+            height: 50px
+            border-top-right-radius: 3px
+            border-bottom-right-radius: 3px

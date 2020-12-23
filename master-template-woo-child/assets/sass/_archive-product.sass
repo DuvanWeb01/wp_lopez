@@ -1,0 +1,67 @@
+.lp-product
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.16)
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.16)
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.16)
+    border-radius: 60px 0 60px 0
+    height: 450px
+    padding: 1em
+    text-align: center
+    background-color: $bl
+    img
+        height: 230px
+        width: auto
+    &__title
+        margin-top: 1em !important
+        color: $s-co
+        font-weight: 300
+        padding: 0 !important
+    &__sku
+        color: $s-co
+        font-size: 1em
+    &__btn
+        display: flex
+        justify-content: center
+        margin-top: 1em
+        .yith-wcwl-add-to-wishlist
+            margin-top: 0
+            padding: 0 .5em
+        i 
+            color: #979797
+            transition: $tr
+            &:hover
+                color: $s-co
+        .feedback i
+            color: $s-co
+    &__cart
+        padding: 0 .5em
+    &__details
+        margin-top: 1em
+/*Pagination*/
+.woocommerce-pagination
+    margin-bottom: 4em
+    li
+        border: 0px !important
+        .page-numbers
+            color: $s-co
+            transition: $tr
+            &:hover
+                color: $p-co !important
+                background-color: $bl !important
+            &.current
+                color: $p-co !important
+                background-color: $bl !important
+        .next, .prev
+            border: 2px solid $s-co !important
+            border-radius: 50%
+            &:hover
+                border-color: $p-co !important
+/*Imagen fondo*/
+.lp-img-archive
+    position: absolute
+    bottom: 40px
+    right: -120px
+    height: 94% !important
+    width: auto
+    z-index: -1
+#container-page
+    position: relative

@@ -1,0 +1,51 @@
+.lp-information-product
+    background-color: $s-co
+    padding: 1em 1em 1em 3em
+    border-radius: 0 0 0 60px
+    position: relative
+    &::before
+        content: ''
+        background-color: $s-co
+        position: absolute
+        height: 100%
+        width: 500px
+        top: 0
+        right: -400px
+        z-index: -1
+    .product_title
+        font-family: Futura Md BT !important
+        color: $p-co
+        letter-spacing: 3px
+        line-height: 1.2em
+        font-size: 1.7em
+        position: relative
+        margin-bottom: 1em
+        &::before
+            content: ''
+            position: absolute
+            width: 90%
+            height: 2px
+            bottom: -10px
+            left: 0
+            background-color: $p-co
+    .price
+        bdi, .woocommerce-Price-currencySymbol
+            color: $bl
+            font-family: Futura Md BT !important
+    .woocommerce-product-details__short-description
+        margin-bottom: 2em
+        p 
+            color: $bl
+    .variations
+        label
+            color: $p-co
+            font-family:  Futura Bk BT !important
+        select
+            background-color: transparent
+            height: 30px
+            border-radius: 5px
+            border: 1px solid $bl
+            color: $bl
+            padding-left: .5em
+            padding-bottom: .1em
+            font-family:  Futura Bk BT !important

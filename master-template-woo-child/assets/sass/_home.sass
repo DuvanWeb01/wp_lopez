@@ -1,0 +1,230 @@
+.home
+    .static-header
+        background-color: transparent !important
+        z-index: 2
+        position: relative
+.subtitle-slider
+    -webkit-text-stroke: 4px $bl
+    color: transparent !important
+.slider-home
+    position: relative
+.lp-home-a
+    .l-title
+        h3
+            -webkit-text-stroke: 2px $bl
+            color: transparent !important
+    &__img
+        right: -30px
+        img
+            width: 90%
+    .elementor-element-00df8b8
+        width: 35% !important
+    &__text-list
+        -webkit-text-stroke: 1.5px $s-co
+        color: transparent !important
+        position: absolute
+        left: -45px
+        top: 95px
+        transform: rotate(-90deg)
+        font-size: 2.2em
+    &__list
+        list-style: none
+        padding: 0
+        li
+            padding: .5em 0
+        span
+            width: 15px
+            height: 15px
+            border: 2px solid $s-co
+            display: block
+            transform: rotate(45deg)
+            margin-right: .7em
+            transition: $tr
+        a
+            display: inline-flex
+            align-items: center
+            color: $s-co
+            transition: $tr
+            font-weight: bold
+            font-size: 1.2em
+            &:hover
+                color: $p-co
+            &:hover span
+                border-color: $p-co
+/*Carousel products*/
+.lp-carousel
+    &__item
+        padding: .5em 2em
+    &__card
+        height: 550px
+        overflow: hidden
+        border-radius: 60px 4px 60px 4px
+        -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.16)
+        -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.16)
+        box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.16)
+        position: relative
+        &:hover .lp-carousel__body-card
+            left: 0
+        &:hover .lp-carousel__info
+            bottom: 120px
+    &__img
+        height: 550px !important
+        object-fit: cover
+        border-radius: 60px 4px 60px 4px !important
+        width: 100%
+    &__body-card
+        position: absolute
+        top: 0
+        left: 0
+        background-color: rgba(0, 0, 0, .74)
+        width: 100%
+        height: 100%
+        transition: $tr
+        left: -400px
+    &__info
+        position: absolute
+        bottom: -220px
+        transform: rotate(-90deg)
+        left: -40px
+        width: 300px
+        transition: $tr
+    &__title
+        text-transform: uppercase
+        color: $p-co
+        font-size: 1.5em
+        letter-spacing: 5px
+        margin-bottom: .4em
+    &__line
+        display: block
+        width: 100%
+        height: 2px
+        background-color: $p-co
+    &__btn
+        margin-top: 2.5em
+        color: $bl
+        font-size: .85em
+        letter-spacing: 3px
+    .slick-next
+        position: absolute
+        right: -50px
+        top: 47%
+        width: 45px
+        height: 45px
+        border-radius: 50%
+        border: 2px solid $s-co
+        background-color: transparent
+        transition: $tr
+        color: $s-co
+        &:hover
+            background-color: $s-co
+            color: $bl
+    .slick-prev
+        position: absolute
+        left: -50px
+        top: 47%
+        width: 45px
+        height: 45px
+        border-radius: 50%
+        border: 2px solid $s-co
+        background-color: transparent
+        transition: $tr
+        color: $s-co
+        &:hover
+            background-color: $s-co
+            color: $bl
+/*Carousel Proyects*/
+.lp-carousel-proyects
+    &__img
+        width: 100%
+        height: 500px !important
+        object-fit: cover
+    .slick-prev
+        position: absolute
+        bottom: -75px
+        left: 0
+        width: 40px
+        height: 40px
+        border-radius: 50%
+        border: 2px solid $p-co
+        color: $p-co
+        background-color: transparent
+        transition: $tr
+        z-index: 1
+        &:hover
+            background-color: $p-co
+            color: #1E1E1E
+    .slick-next
+        position: absolute
+        right: 0
+        width: 40px
+        height: 40px
+        border-radius: 50%
+        bottom: -75px
+        border: 2px solid $p-co
+        color: $p-co
+        background-color: transparent
+        transition: $tr
+        z-index: 1
+        &:hover
+            background-color: $p-co
+            color: #1E1E1E
+    .slick-dots
+        display: flex
+        list-style: none
+        justify-content: center
+        padding: 0
+        position: absolute
+        width: 100%
+        bottom: -90px
+        li
+            margin: 0 .5em
+        button
+            width: 14px
+            height: 14px
+            color: transparent
+            border-radius: 50%
+            padding: 0
+            border: 2px solid $bl
+            background-color: transparent
+        &::marker
+            font-size: 0
+        .slick-active
+            button
+                background-color: $p-co
+                border: 2px solid $p-co
+/*Contacto*/
+.lp-contact
+    &__enc
+        .elementor-heading-title
+            background-color: $s-co
+            display: inline
+            padding: .5em 1em
+            border-radius: 0 30px 0 0
+    .form-group
+        margin-bottom: .5em
+    .form-control
+        height: 50px
+        border: 2px solid $s-co
+        color: $s-co !important
+        border-radius: 20px
+        &::placeholder
+            color: $s-co
+    textarea
+        height: 150px !important
+    .politica
+        display: flex
+        justify-content: end
+        align-items: center
+        p 
+            color: $s-co
+            font-size: .9em
+            margin: 0
+        .form-check
+            margin-right: .5em
+    .button
+        display: flex
+        justify-content: end
+        .ajax-loader
+            position: absolute
+    .img-contact
+        bottom: -33px

@@ -1,0 +1,43 @@
+<!-- 
+*******************************Header Logo Superior**********************
+-->
+
+<!--Static Header -->
+<div class="bottom-header static-header type-logo-superior">
+    <div class="box-logo-and-button">
+        {{> logo}}
+        {{> button-menu-mobile}}
+    </div>
+
+    <div class="box-menu-and-buttons">
+        {{> menu-principal}}
+        
+        <div class="box-buttons">
+            {{> buttons-menu-wc }}
+            {{> button-menu-lateral}}
+        </div>
+    </div>
+</div>
+
+
+<!--Sticky Header -->
+
+<div class="bottom-header sticky-header type-logo-superior box-shadow bg-light">
+    <div class="box-logo-and-button">
+        {{> logo}}
+        <div class="button-menu-toggle open-menu button-menu-mobile" data-target=".box-menu-nav-mobile">
+            <span class="line"></span>
+        </div>
+    </div>
+
+    <div class="box-menu-and-buttons">
+        {{> logo}}
+        
+        {{> menu-principal}}
+        
+        <div class="box-buttons">
+            {{> buttons-menu-wc }}
+            {{> button-menu-lateral}}
+        </div>
+    </div>
+</div>

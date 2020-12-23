@@ -1,0 +1,42 @@
+#lp-contact
+    ul
+        list-style: none
+        padding: 0
+        li
+            margin-bottom: 1.5em
+        a 
+            color: $bl
+        i
+            margin-right: .3em
+    .form-group
+        margin-bottom: .5em
+    .form-control
+        height: 50px
+        border: 2px solid $bl
+        color: $bl !important
+        border-radius: 20px
+        background-color: transparent
+        &::placeholder
+            color: $bl
+    textarea
+        height: 150px !important
+    .politica
+        display: flex
+        justify-content: end
+        align-items: center
+        p 
+            color: $bl
+            font-size: .9em
+            margin: 0
+            a
+                color: $bl
+                transition: $tr
+                &:hover
+                    color: $p-co
+        .form-check
+            margin-right: .5em
+    .button
+        display: flex
+        justify-content: end
+        .ajax-loader
+            position: absolute

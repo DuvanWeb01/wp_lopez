@@ -1,0 +1,55 @@
+.bottom-header
+    .container
+        padding-left: 0
+        padding-right: 0
+    .box-logo-and-button
+        .box-buttons-wc
+            display: none
+    .box-logo-and-nav
+        display: flex
+        flex-flow: row nowrap
+        justify-content: space-between
+        align-items: center
+        padding: 1em 0
+        .box-nav-and-buttons
+            display: flex
+            flex-flow: row nowrap
+        .box-buttons
+            display: flex
+            flex-flow: row nowrap
+            align-items: center
+    .button-menu-mobile
+        display: none
+    .img-brand
+        width: auto
+        max-height: 50px
+    .box-logo-and-button
+        display: none
+    &.type
+        &-logo-superior
+            .box-logo-and-nav
+                flex-flow: row wrap
+                .box-logo
+                    width: 100%
+                    padding-bottom: 1em
+                    text-align: center
+            .img-brand
+                max-height: 70px
+        &-logo-center
+            .box-nav-and-buttons
+                display: block
+                padding: 1em 0
+        
+
+.sticky-header
+    position: fixed
+    width: 100%
+    top: -200%
+    z-index: 1
+    transition: all .4s
+    .box-logo-and-button
+        display: none !important
+    &.fixed-bottom-header
+        top: 0
+    .img-brand
+        max-height: 30px !important

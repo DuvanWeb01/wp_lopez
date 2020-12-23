@@ -1,0 +1,17 @@
+.woocommerce span.onsale {
+  z-index: 1;
+}
+
+.single-product .type-product {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.single-product .type-product .woocommerce-product-gallery {
+  float: none !important;
+}
+.single-product .type-product .entry-summary {
+  float: none !important;
+}
+
+/*# sourceMappingURL=woocommerce.css.map */

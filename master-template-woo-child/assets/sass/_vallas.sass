@@ -1,0 +1,221 @@
+#lp-contact-valla
+    .form-group
+        margin-bottom: .5em
+    .form-control
+        height: 50px
+        border: 2px solid $bl
+        color: $bl !important
+        border-radius: 20px
+        background-color: transparent
+        &::placeholder
+            color: $bl
+    textarea
+        height: 150px !important
+    .politica
+        display: flex
+        justify-content: end
+        align-items: center
+        p 
+            color: $bl
+            font-size: .9em
+            margin: 0
+            a
+                color: $bl
+                transition: $tr
+                &:hover
+                    color: $p-co
+        .form-check
+            margin-right: .5em
+    .button
+        display: flex
+        justify-content: end
+        .ajax-loader
+            position: absolute
+
+.lp-card-vallas
+    border-radius: 60px 0 60px 0
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.16)
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.16)
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.16)
+    &__cont-img
+        background-color: #fcfcfc
+        height: 240px
+        position: relative
+        border-radius: 60px 0 0 0
+        img
+            height: 255px !important
+            bottom: 0
+            position: absolute
+            max-width: initial !important
+            width: auto
+            left: -10px
+    &__content-01
+        background-color: $s-co
+        position: relative
+        padding: 2em 2em 2em 3em
+        height: 280px
+        border-radius: 0 0 60px 0
+        .lp-card-vallas__line
+            position: absolute
+            width: 2px
+            height: 80%
+            background-color: $p-co
+            top: 10%
+            left: 20px
+        .lp-card-vallas__title
+            color: $p-co
+            line-height: 1em
+            margin-top: .5em
+            font-size: 1.4em
+            margin-bottom: 1em
+        .lp-card-vallas__desc
+            color: $bl
+    &__content-02
+        background-color: $p-co
+        position: relative
+        padding: 2em 2em 2em 3em
+        height: 280px
+        border-radius: 0 0 60px 0
+        .lp-card-vallas__line
+            position: absolute
+            width: 2px
+            height: 80%
+            background-color: $s-co
+            top: 10%
+            left: 20px
+        .lp-card-vallas__title
+            color: $s-co
+            line-height: 1em
+            margin-top: .5em
+            font-size: 1.4em
+            margin-bottom: 1em
+        .lp-card-vallas__desc
+            color: $s-co
+#lp-tipos-vallas
+    .elementor-tab-content, .elementor-tab-title, .elementor-tab-title::before, .elementor-tab-title::after, .elementor-tabs-content-wrapper, .elementor-tab-desktop-title
+        border-width: 0
+        border: none
+    .elementor-tabs-wrapper
+        display: flex
+        justify-content: center
+    a 
+        text-transform: uppercase
+    .elementor-tab-desktop-title
+        padding: 20px 50px
+.lp-tipos
+    &__cont
+        background-color: #fcfcfc
+        -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.16)
+        -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.16)
+        box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.16)
+        border-radius: 60px 0 60px 0
+        padding: 7em 3em 2em 5em !important
+        height: 450px
+    &__title
+        font-size: 1.3em
+        color: $s-co
+        margin-bottom: 2em
+    &__desc
+        color: $s-co
+    &__car
+        height: 450px
+        padding: 0 7em 0 2em !important
+        display: grid !important
+        align-content: end
+    .slick-next
+        position: absolute
+        right: 30px
+        top: 50%
+        width: 45px
+        height: 45px
+        border-radius: 50%
+        border: 2px solid $s-co
+        background-color: transparent
+        transition: $tr
+        color: $s-co
+        z-index: 1
+        &:hover
+            background-color: $s-co
+            color: $bl
+    .slick-prev
+        position: absolute
+        left: -30px
+        top: 50%
+        width: 45px
+        height: 45px
+        border-radius: 50%
+        border: 2px solid $s-co
+        background-color: transparent
+        transition: $tr
+        color: $s-co
+        z-index: 1
+        &:hover
+            background-color: $s-co
+            color: $bl
+#lp-preguntas
+    .s-color
+        color: $p-co
+    .elementor-toggle
+        background-color: $p-co
+        padding: 2em 3em
+        border-radius: 60px 0 60px 0
+        -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.16)
+        -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.16)
+        box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.16)
+        .elementor-tab-title
+            border-bottom: 0px
+            .elementor-toggle-title
+                font-family: Futura Md BT !important
+                letter-spacing: 2px
+            i 
+                font-size: .85em
+        p 
+            color: $s-co
+            padding-left: 1.3em
+        .elementor-tab-content
+            border: none
+#lp-clientes
+    .elementor-image-carousel
+        display: flex
+        align-items: center
+    .s-color
+        color: $p-co
+#lp-galeria
+    img
+        width: 100%
+        height: 300px
+        object-fit: cover
+        border-radius: 60px 0 60px 0
+        -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.16)
+        -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.16)
+        box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.16)
+    .gallery-icon
+        padding: 2em
+    a
+        position: relative
+        display: block
+        &::before
+            content: ''
+            position: absolute
+            left: 0
+            top: 0
+            background-color: rgba(255, 242, 18, .78)
+            width: 100%
+            height: 100%
+            border-radius: 60px 0 60px 0
+            opacity: 0
+            transition: $tr
+        &:hover::before
+            opacity: 1
+        &:hover i
+            opacity: 1
+    i 
+        position: absolute
+        top: 46%
+        font-size: 2em
+        left: 0
+        right: 0
+        color: $s-co
+        opacity: 0
+        transition: $tr
+    
