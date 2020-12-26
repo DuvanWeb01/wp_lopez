@@ -15,7 +15,9 @@ if(!function_exists('lp_subheader_shop_func')){
                 <p>Busca, y compra todo lo que necesites</p>
             </div>
         </div>
+
         <?php
+        echo do_shortcode( '[lp_breadcrumbs]' );
         return ob_get_clean();
     }
     add_shortcode( 'lp_subheader_shop', 'lp_subheader_shop_func' );

@@ -25,6 +25,7 @@ require "inc/shortcodes/sc-vallas-fijas.php";
 require "inc/shortcodes/sc-vallas-rotativas.php";
 require "inc/shortcodes/sc-vallas-obras.php";
 require "inc/shortcodes/sc-vallas-otras.php";
+require "inc/shortcodes/sc-breadcrumbs.php";
 require "inc/shortcodes/sc-subheader-shop.php";
 require "inc/custom-woocommerce.php";
 

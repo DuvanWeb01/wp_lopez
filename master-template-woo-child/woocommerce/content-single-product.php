@@ -31,13 +31,7 @@ if ( post_password_required() ) {
 	return;
 }
 ?>
-<div class="breadcrumbs" typeof="BreadcrumbList" vocab="http://schema.org/">
-    <?php 
-        if (function_exists('bcn_display')) {
-            bcn_display();
-        }
-    ?>
-</div>
+
 <div id="product-<?php the_ID(); ?>" <?php wc_product_class( '', $product ); ?>>
 	
 	<?php
