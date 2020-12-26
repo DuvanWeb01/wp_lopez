@@ -1,41 +1,24 @@
 @charset "UTF-8";
-@font-face {
-  font-family: Futura Hv BT;
-  src: url(http://localhost/lopez-publicidad/wp-content/themes/master-template-woo-child/assets/fonts/futura-heavy-font.ttf);
-}
-@font-face {
-  font-family: Futura Md BT;
-  src: url(http://localhost/lopez-publicidad/wp-content/themes/master-template-woo-child/assets/fonts/futura-heavy-font.ttf);
-}
-@font-face {
-  font-family: Lulo Clean;
-  src: url(http://localhost/lopez-publicidad/wp-content/themes/master-template-woo-child/assets/fonts/lulo-clean.ttf);
-}
-@font-face {
-  font-family: Futura Bk BT;
-  src: url(http://localhost/lopez-publicidad/wp-content/themes/master-template-woo-child/assets/fonts/futura-book-font.ttf);
-}
 /*Font Futura Hv BT*/
-.nav-link, .btn-slider, .button-master, .lp-carousel__btn, #lp-tipos-vallas a, .shop_table .button {
-  font-family: Futura Hv BT !important;
+.nav-link, .btn-slider, .button-master, .lp-carousel__btn, #lp-tipos-vallas a {
+  font-family: "futuraheavy" !important;
 }
 
 /*Font Futura Md BT*/
-.title-slider, .p-title h4, .lp-tipos__title, .p-title h3, .p-title div, .lp-home-a__list a, .lp-carousel__title, .widget-title, .lp-link, .lp-card-vallas__title, .related h2, .nobr, .wishlist-title-container h2 {
-  font-family: Futura Md BT !important;
+.title-slider, .p-title h4, .lp-tipos__title, .p-title h3, .p-title div, .lp-home-a__list a, .lp-carousel__title, .widget-title, .lp-link, .lp-card-vallas__title {
+  font-family: "futuramedium" !important;
 }
 
 /*Font Lulo Clean*/
 .subtitle-slider, .l-title h3, .lp-home-a__text-list {
-  font-family: Lulo Clean !important;
+  font-family: "lulocleanw01-oneboldregular" !important;
 }
 
 /*Font Futura Bk BT*/
-p, input, textarea, .top-footer a, #lp-contact ul a, #lp-beneficios ul span, .lp-product__title, .lp-product__sku, .sku_wrapper, .sku, .lp-subtitle-p h5, .product-name a, .product-price span, .product-stock-status span {
-  font-family: Futura Bk BT !important;
+p, input, textarea, .top-footer a, #lp-contact ul a, #lp-beneficios ul span, .lp-product__title, .lp-product__sku {
+  font-family: "futurabook" !important;
 }
 
-/*Variables*/
 /*Párrafos*/
 .p-white p {
   color: #ffffff;
@@ -44,6 +27,16 @@ p, input, textarea, .top-footer a, #lp-contact ul a, #lp-beneficios ul span, .lp
 /*Buttons*/
 .button-master {
   line-height: 2.7em !important;
+}
+
+.header-title {
+  color: #FFF212;
+  letter-spacing: 12px;
+}
+.header-title .title-divider {
+  border: 1px solid #FFF212;
+  width: 100px;
+  margin: 0 auto;
 }
 
 .bottom-header .box-buttons-wc {
@@ -988,6 +981,10 @@ p, input, textarea, .top-footer a, #lp-contact ul a, #lp-beneficios ul span, .lp
   z-index: -2;
 }
 
+.single-product .lp-subheader-shop {
+  display: none;
+}
+
 .lp-politicas-section {
   height: 750px;
   overflow-y: scroll;
@@ -1038,6 +1035,52 @@ p, input, textarea, .top-footer a, #lp-contact ul a, #lp-beneficios ul span, .lp
 }
 .page-id-692 .shop_table .product-name a:hover {
   color: #FFF212;
+}
+
+.lp-subheader-shop {
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.lp-subheader-shop .lp-search-form {
+  position: relative;
+  max-width: 480px;
+  margin: 2em auto;
+}
+.lp-subheader-shop .lp-search-form button {
+  color: white;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 50px;
+  border: none;
+  background: transparent;
+  padding: 0 1em;
+}
+.lp-subheader-shop .lp-search-form button:hover {
+  color: #FFF212;
+}
+.lp-subheader-shop .lp-search-form .form-control {
+  background-color: transparent;
+  border-radius: 20px;
+  border: 2px solid white;
+  padding: 0.5em 1em;
+  color: white;
+  min-height: 50px;
+}
+.lp-subheader-shop .lp-search-form .form-control::placeholder {
+  color: white;
+}
+.lp-subheader-shop .lp-search-form .form-control:focus {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.lp-subheader-shop p {
+  color: white;
 }
 
 /*# sourceMappingURL=custom-style.css.map */
