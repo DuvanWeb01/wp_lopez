@@ -890,33 +890,51 @@ p, input, textarea, .top-footer a, #lp-contact ul a, #lp-beneficios ul span, .lp
   font-family: Futura Bk BT !important;
 }
 
+.single-product .lp-subheader-shop {
+  display: none;
+}
+
 .lp-subheader-shop {
-  background-position: center;
+  background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .lp-subheader-shop .lp-search-form {
   position: relative;
-  max-width: 450px;
-  margin: 2em auto;
+  max-width: 480px;
+  margin: 1em auto;
 }
 .lp-subheader-shop .lp-search-form button {
   color: white;
   position: absolute;
   right: 0;
-  top: 0;
+  top: 20px;
   height: 50px;
   border: none;
   background: transparent;
+  padding: 0 1em;
+}
+.lp-subheader-shop .lp-search-form button:hover {
+  color: #FFF212;
 }
 .lp-subheader-shop .lp-search-form .form-control {
   background-color: transparent;
-  border-radius: 25px;
+  border-radius: 20px;
   border: 2px solid white;
   padding: 0.5em 1em;
+  color: white;
+  min-height: 50px;
 }
 .lp-subheader-shop .lp-search-form .form-control::placeholder {
   color: white;
+}
+.lp-subheader-shop .lp-search-form .form-control:focus {
+  background-color: rgba(0, 0, 0, 0.6);
 }
 .lp-subheader-shop p {
   color: white;
