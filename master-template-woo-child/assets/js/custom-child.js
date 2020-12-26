@@ -60,4 +60,10 @@ jQuery(document).ready(function($){
     $('.add_to_wishlist').html('<i class="far fa-heart"></i>');
     $('.quantity').prepend('<span class="lp-cantidad">Cantidad</span>');
     
+    $('.widget_product_categories .product-categories .cat-parent a').first().append('<i class="fas fa-sort-down ml-2"></i>');
+
+    $('.widget_product_categories .product-categories .cat-parent a i').click(function(e){
+      e.preventDefault();
+      $(this).parent().next().slideToggle();
+    })
 });

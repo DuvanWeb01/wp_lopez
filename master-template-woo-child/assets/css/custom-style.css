@@ -980,9 +980,11 @@ p, input, textarea, .top-footer a, #lp-contact ul a, #lp-beneficios ul span, .lp
   height: 1000px !important;
   z-index: -2;
 }
-
-.single-product .lp-subheader-shop {
+.single-product .widget_product_categories {
   display: none;
+}
+.single-product .lp-filter-bar {
+  display: none !important;
 }
 
 .lp-politicas-section {
@@ -1101,6 +1103,71 @@ p, input, textarea, .top-footer a, #lp-contact ul a, #lp-beneficios ul span, .lp
 }
 .lp-breadcrumbs a:hover {
   opacity: 0.6;
+}
+
+.lp-filter-bar__buttons .nav-link {
+  color: #727376;
+}
+.lp-filter-bar__buttons .nav-link:hover {
+  color: black;
+}
+
+.widget_product_categories .widget-title {
+  display: none;
+}
+.widget_product_categories .product-categories {
+  list-style: none;
+  display: flex;
+  padding-left: 0;
+}
+.widget_product_categories .product-categories .cat-item {
+  margin-right: 1.5em;
+  position: relative;
+}
+.widget_product_categories .product-categories .cat-item a {
+  color: #727376;
+  font-family: "futuraheavy";
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+.widget_product_categories .product-categories .cat-item a:hover {
+  color: black;
+}
+.widget_product_categories .product-categories .cat-item .children {
+  display: none;
+  position: absolute;
+  list-style: none;
+  padding: 1em;
+  top: 2em;
+  left: 0;
+  border: 1px solid #d7d7d7;
+  font-size: 0.9em;
+  min-width: 200px;
+  background-color: white;
+  z-index: 1;
+}
+.widget_product_categories .product-categories .cat-item .children .cat-item {
+  margin: 0;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid #d7d7d7;
+  margin-bottom: 0.5em;
+}
+.widget_product_categories .product-categories .cat-item .children li:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+.widget_product_categories .product-categories .cat-item.cat-parent a i {
+  display: inline-flex;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #d7d7d7;
+}
+.widget_product_categories .product-categories .cat-item.cat-parent a i::before {
+  transform: translateY(-2px);
 }
 
 /*# sourceMappingURL=custom-style.css.map */

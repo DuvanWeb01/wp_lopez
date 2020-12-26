@@ -18,6 +18,21 @@ if(!function_exists('lp_subheader_shop_func')){
 
         <?php
         echo do_shortcode( '[lp_breadcrumbs]' );
+        ?>
+
+        <div class="lp-filter-bar d-flex flex-row justify-content-between align-items-center container">
+            <?php dynamic_sidebar('Master Sidebar Woocommerce'); ?>
+
+            <div class="lp-filter-bar__buttons">
+                <ul class="nav">
+                    <li class="nav-item"><a href="#" class="nav-link lp-filter-bar__buttons__wishlist"><i class="far fa-heart"></i></a></li>
+                    <li class="nav-item"><a href="#" class="nav-link lp-filter-bar__buttons__cart"><i class="fas fa-shopping-cart"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <?php
+
         return ob_get_clean();
     }
     add_shortcode( 'lp_subheader_shop', 'lp_subheader_shop_func' );
