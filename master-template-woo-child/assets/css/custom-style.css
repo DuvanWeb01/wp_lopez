@@ -907,13 +907,13 @@ p, input, textarea, .top-footer a, #lp-contact ul a, #lp-beneficios ul span, .lp
 .lp-subheader-shop .lp-search-form {
   position: relative;
   max-width: 480px;
-  margin: 1em auto;
+  margin: 2em auto;
 }
 .lp-subheader-shop .lp-search-form button {
   color: white;
   position: absolute;
   right: 0;
-  top: 20px;
+  top: 0;
   height: 50px;
   border: none;
   background: transparent;
