@@ -1,6 +1,6 @@
 .lp-information-product
     background-color: $s-co
-    padding: 1em 1em 1em 3em
+    padding: 2em 1em 2em 3em
     border-radius: 0 0 0 60px
     position: relative
     &::before
@@ -12,6 +12,16 @@
         top: 0
         right: -400px
         z-index: -1
+    .lp-btn-header
+        display: flex
+        justify-content: end
+        margin-bottom: 2em
+        i 
+            font-size: 1.3em
+            color: $p-co
+        .yith-wcwl-add-to-wishlist
+            margin-top: 0
+            margin-right: .8em
     .product_title
         font-family: Futura Md BT !important
         color: $p-co
@@ -37,9 +47,11 @@
         p 
             color: $bl
     .variations
+        margin-bottom: .3em !important
         label
             color: $p-co
             font-family:  Futura Bk BT !important
+            font-weight: 300 !important
         select
             background-color: transparent
             height: 30px
@@ -49,3 +61,63 @@
             padding-left: .5em
             padding-bottom: .1em
             font-family:  Futura Bk BT !important
+    .quantity
+        width: 100%
+        margin-bottom: 2em !important
+        input
+            background-color: transparent
+            border: 1px solid $bl
+            height: 30px
+            border-radius: 5px
+            color: $bl
+        .lp-cantidad
+            color: $p-co
+            font-family:  Futura Bk BT !important
+            font-size: 1rem
+            margin-right: 5.7em
+    .single_add_to_cart_button
+        border: 1px solid $bl !important
+        border-radius: 20px !important
+        background-color: transparent !important
+        font-family: Futura Md BT !important
+        text-transform: uppercase
+        letter-spacing: 2px
+        transition: $tr
+        margin-right: 1em !important
+        &:hover
+            background-color: $bl !important
+            color: $s-co !important
+    .wcqb_button
+        background-color: $p-co
+        height: 38px
+        border-radius: 20px
+        font-family: Futura Md BT !important
+        border: 1px solid $p-co
+        text-transform: uppercase
+        padding: 0 1em
+        transition: $tr
+        &:hover
+            background-color: transparent
+            color: $p-co
+    .posted_in
+        display: none
+    .sku_wrapper
+        color: $p-co
+        .sku
+            color: $bl
+/*Productos relacionados*/
+.related
+    margin: auto
+    h2
+        text-align: center
+        text-transform: uppercase
+        font-size: 1.8em
+        letter-spacing: 12px
+        color: $s-co
+        margin-bottom: 2em
+        margin-top: 3em
+.single-product
+    .lp-img-archive
+        bottom: -100px
+        height: 1000px !important
+        z-index: -2

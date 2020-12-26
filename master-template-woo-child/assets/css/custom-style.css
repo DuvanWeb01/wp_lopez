@@ -16,12 +16,12 @@
   src: url(http://localhost/lopez-publicidad/wp-content/themes/master-template-woo-child/assets/fonts/futura-book-font.ttf);
 }
 /*Font Futura Hv BT*/
-.nav-link, .btn-slider, .button-master, .lp-carousel__btn, #lp-tipos-vallas a {
+.nav-link, .btn-slider, .button-master, .lp-carousel__btn, #lp-tipos-vallas a, .shop_table .button {
   font-family: Futura Hv BT !important;
 }
 
 /*Font Futura Md BT*/
-.title-slider, .p-title h4, .lp-tipos__title, .p-title h3, .p-title div, .lp-home-a__list a, .lp-carousel__title, .widget-title, .lp-link, .lp-card-vallas__title {
+.title-slider, .p-title h4, .lp-tipos__title, .p-title h3, .p-title div, .lp-home-a__list a, .lp-carousel__title, .widget-title, .lp-link, .lp-card-vallas__title, .related h2, .nobr, .wishlist-title-container h2 {
   font-family: Futura Md BT !important;
 }
 
@@ -31,7 +31,7 @@
 }
 
 /*Font Futura Bk BT*/
-p, input, textarea, .top-footer a, #lp-contact ul a, #lp-beneficios ul span, .lp-product__title, .lp-product__sku {
+p, input, textarea, .top-footer a, #lp-contact ul a, #lp-beneficios ul span, .lp-product__title, .lp-product__sku, .sku_wrapper, .sku, .lp-subtitle-p h5, .product-name a, .product-price span, .product-stock-status span {
   font-family: Futura Bk BT !important;
 }
 
@@ -840,7 +840,7 @@ p, input, textarea, .top-footer a, #lp-contact ul a, #lp-beneficios ul span, .lp
 
 .lp-information-product {
   background-color: #202020;
-  padding: 1em 1em 1em 3em;
+  padding: 2em 1em 2em 3em;
   border-radius: 0 0 0 60px;
   position: relative;
 }
@@ -853,6 +853,19 @@ p, input, textarea, .top-footer a, #lp-contact ul a, #lp-beneficios ul span, .lp
   top: 0;
   right: -400px;
   z-index: -1;
+}
+.lp-information-product .lp-btn-header {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 2em;
+}
+.lp-information-product .lp-btn-header i {
+  font-size: 1.3em;
+  color: #FFF212;
+}
+.lp-information-product .lp-btn-header .yith-wcwl-add-to-wishlist {
+  margin-top: 0;
+  margin-right: 0.8em;
 }
 .lp-information-product .product_title {
   font-family: Futura Md BT !important;
@@ -882,9 +895,13 @@ p, input, textarea, .top-footer a, #lp-contact ul a, #lp-beneficios ul span, .lp
 .lp-information-product .woocommerce-product-details__short-description p {
   color: #ffffff;
 }
+.lp-information-product .variations {
+  margin-bottom: 0.3em !important;
+}
 .lp-information-product .variations label {
   color: #FFF212;
   font-family: Futura Bk BT !important;
+  font-weight: 300 !important;
 }
 .lp-information-product .variations select {
   background-color: transparent;
@@ -895,6 +912,132 @@ p, input, textarea, .top-footer a, #lp-contact ul a, #lp-beneficios ul span, .lp
   padding-left: 0.5em;
   padding-bottom: 0.1em;
   font-family: Futura Bk BT !important;
+}
+.lp-information-product .quantity {
+  width: 100%;
+  margin-bottom: 2em !important;
+}
+.lp-information-product .quantity input {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  height: 30px;
+  border-radius: 5px;
+  color: #ffffff;
+}
+.lp-information-product .quantity .lp-cantidad {
+  color: #FFF212;
+  font-family: Futura Bk BT !important;
+  font-size: 1rem;
+  margin-right: 5.7em;
+}
+.lp-information-product .single_add_to_cart_button {
+  border: 1px solid #ffffff !important;
+  border-radius: 20px !important;
+  background-color: transparent !important;
+  font-family: Futura Md BT !important;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: all 0.3s ease-in-out;
+  margin-right: 1em !important;
+}
+.lp-information-product .single_add_to_cart_button:hover {
+  background-color: #ffffff !important;
+  color: #202020 !important;
+}
+.lp-information-product .wcqb_button {
+  background-color: #FFF212;
+  height: 38px;
+  border-radius: 20px;
+  font-family: Futura Md BT !important;
+  border: 1px solid #FFF212;
+  text-transform: uppercase;
+  padding: 0 1em;
+  transition: all 0.3s ease-in-out;
+}
+.lp-information-product .wcqb_button:hover {
+  background-color: transparent;
+  color: #FFF212;
+}
+.lp-information-product .posted_in {
+  display: none;
+}
+.lp-information-product .sku_wrapper {
+  color: #FFF212;
+}
+.lp-information-product .sku_wrapper .sku {
+  color: #ffffff;
+}
+
+/*Productos relacionados*/
+.related {
+  margin: auto;
+}
+.related h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.8em;
+  letter-spacing: 12px;
+  color: #202020;
+  margin-bottom: 2em;
+  margin-top: 3em;
+}
+
+.single-product .lp-img-archive {
+  bottom: -100px;
+  height: 1000px !important;
+  z-index: -2;
+}
+
+.lp-politicas-section {
+  height: 750px;
+  overflow-y: scroll;
+}
+.lp-politicas-section::-webkit-scrollbar {
+  width: 10px;
+  background-color: #E5E5E5;
+}
+.lp-politicas-section::-webkit-scrollbar-thumb {
+  background-color: #202020;
+}
+.lp-politicas-section p {
+  color: #202020;
+}
+
+.page-id-692 .shop_table {
+  margin-bottom: 4em !important;
+  border-radius: 60px 0 60px 0 !important;
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.16);
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.16);
+  border: none !important;
+  overflow: hidden;
+}
+.page-id-692 .shop_table .button {
+  background-color: #FFF212 !important;
+  height: 40px !important;
+  line-height: 1.8em !important;
+  border-radius: 20px !important;
+  text-transform: uppercase;
+  color: #202020 !important;
+  font-weight: 300 !important;
+  transition: all 0.3s ease-in-out;
+}
+.page-id-692 .shop_table .button:hover {
+  background-color: #202020 !important;
+  color: #FFF212 !important;
+}
+.page-id-692 .shop_table .nobr {
+  text-transform: uppercase;
+  color: #202020;
+  font-weight: 700;
+}
+.page-id-692 .shop_table .product-name a {
+  color: #202020;
+  font-size: 1.1em;
+  transition: all 0.3s ease-in-out;
+}
+.page-id-692 .shop_table .product-name a:hover {
+  color: #FFF212;
 }
 
 /*# sourceMappingURL=custom-style.css.map */

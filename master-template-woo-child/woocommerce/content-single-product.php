@@ -31,8 +31,15 @@ if ( post_password_required() ) {
 	return;
 }
 ?>
+<div class="breadcrumbs" typeof="BreadcrumbList" vocab="http://schema.org/">
+    <?php 
+        if (function_exists('bcn_display')) {
+            bcn_display();
+        }
+    ?>
+</div>
 <div id="product-<?php the_ID(); ?>" <?php wc_product_class( '', $product ); ?>>
-
+	
 	<?php
 	/**
 	 * Hook: woocommerce_before_single_product_summary.
@@ -44,7 +51,14 @@ if ( post_password_required() ) {
 	?>
 
 	<div class="summary entry-summary lp-information-product">
+		<div class="lp-btn-header">
+		
 		<?php
+		echo do_shortcode('[yith_wcwl_add_to_wishlist]');
+		?>
+		<a href="<?php echo get_home_url();?>/carrito"><i class="fas fa-shopping-cart"></i></a>
+		</div>
+	<?php
 		/**
 		 * Hook: woocommerce_single_product_summary.
 		 *
@@ -71,6 +85,7 @@ if ( post_password_required() ) {
 	 */
 	do_action( 'woocommerce_after_single_product_summary' );
 	?>
+	<img src="http://localhost/lopez-publicidad/wp-content/uploads/2020/12/Vector-1.png" alt="" class="lp-img-archive">
 </div>
 
 <?php do_action( 'woocommerce_after_single_product' ); ?>

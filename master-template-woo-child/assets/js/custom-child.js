@@ -58,5 +58,6 @@ jQuery(document).ready(function($){
 
     $('#lp-galeria a').append('<i class="far fa-eye"></i>');
     $('.add_to_wishlist').html('<i class="far fa-heart"></i>');
+    $('.quantity').prepend('<span class="lp-cantidad">Cantidad</span>');
     
 });
