@@ -9,7 +9,7 @@
 
 global $geniorama;
 ?>
-    <section class="sub-heading-section <?php echo add_class_subheader('banner');?> mb-5"<?php if($geniorama['opt-bg-subheaders'] === '1'):?> style="background-image: url('<?php echo add_banner_subheader(); ?>')" <?php endif; ?>>
+    <section class="sub-heading-section <?php echo add_class_subheader('banner');?>"<?php if($geniorama['opt-bg-subheaders'] === '1'):?> style="background-image: url('<?php echo add_banner_subheader(); ?>')" <?php endif; ?>>
         <div class="container">
             <div class="position-relative content-box <?php echo add_class_subheader('alignment'); ?>">
                 <h1><?php  
