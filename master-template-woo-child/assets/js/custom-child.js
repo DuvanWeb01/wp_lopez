@@ -59,6 +59,8 @@ jQuery(document).ready(function($){
     $('#lp-galeria a').append('<i class="far fa-eye"></i>');
     $('.add_to_wishlist').html('<i class="far fa-heart"></i>');
     $('.quantity').prepend('<span class="lp-cantidad">Cantidad</span>');
+    $('.woocommerce-MyAccount-content').append('<img src="http://localhost/lopez-publicidad/wp-content/uploads/2020/12/Vector-1.png" alt="" class="img-account-bg">');
+    $('.woocommerce-MyAccount-navigation').append('<img src="http://localhost/lopez-publicidad/wp-content/uploads/2020/12/logo-cortado.png" alt="" class="img-nav-account-bg">');
     
     $('.widget_product_categories .product-categories .cat-parent a').first().append('<i class="fas fa-sort-down ml-2"></i>');
 

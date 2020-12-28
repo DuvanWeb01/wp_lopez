@@ -1,0 +1,182 @@
+.woocommerce-account
+    .static-header
+        position: absolute
+        width: 100%
+        background-color: transparent
+    #content
+        background-color: $s-co
+    #customer_login
+        margin-top: 4em
+        margin-bottom: 3em
+    .u-column1, .u-column2
+        max-width: 50%
+        h2
+            text-transform: uppercase
+            font-size: 1.2em
+            color: $p-co
+            letter-spacing: 4px
+        .woocommerce-form
+            border-radius: 60px 0 60px 0
+            border: none
+            -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.16)
+            -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.16)
+            box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.16)
+            background-color: $bl
+            padding: 2em
+        p
+            color: $s-co
+        .woocommerce-Input
+            background-color: transparent
+            height: 40px
+            border: 1px solid $s-co
+            padding-left: .8em
+            color: $s-co
+            border-radius: 10px
+        label, .password-input
+            width: 100%
+        .woocommerce-form__label-for-checkbox
+            span
+                color: $s-co
+                font-size: 1em
+        .woocommerce-button
+            background-color: $p-co
+            border-radius: 20px
+            color: $s-co
+            text-transform: uppercase
+            font-weight: 500
+            letter-spacing: 2px
+            transition: $tr
+            &:hover
+                background-color: $s-co
+                color: $p-co
+    .woocommerce-MyAccount-navigation
+        padding-top: 2em
+        padding-bottom: 8em
+        overflow: hidden
+        .img-nav-account-bg
+            position: absolute
+            bottom: 0
+        ul
+            list-style: none
+            padding-left: 0
+            padding-right: 2em
+        li
+            border-bottom: 2px solid $p-co
+            padding: 1em 0
+        .is-active
+            a
+                color: $p-co
+                &::before
+                    border-color: $p-co
+        a
+            color: $bl
+            position: relative
+            transition: $tr
+            text-transform: uppercase
+            font-size: .8em
+            letter-spacing: 3px
+            font-weight: 600
+            &:hover
+                color: $p-co
+            &::before
+                content: ''
+                width: 12px
+                height: 12px
+                position: absolute
+                left: -25px
+                border: 2px solid $bl
+                top: 2px
+                transform: rotate(50deg)
+                transition: $tr
+            &:hover::before
+                border-color: $p-co
+        .woocommerce-MyAccount-navigation-link--customer-logout
+            border: none
+    .woocommerce-MyAccount-content
+        background-color: $bl
+        min-height: 600px
+        position: relative
+        padding-top: 3em
+        padding-left: 2em
+        padding-bottom: 3em
+        &::before
+            content: ''
+            position: absolute
+            right: -500px
+            height: 100%
+            width: 500px
+            background-color: $bl
+            top: 0
+        .img-account-bg
+            position: absolute
+            right: -20%
+            bottom: 0
+            height: 500px
+        p
+            color: $s-co
+        .woocommerce-message, .woocommerce-Message
+            background-color: $s-co
+            border-radius: 10px
+            border-top-color: $p-co
+            color: $bl
+            &::before
+                color: $p-co
+        .button
+            background-color: $p-co
+            border-radius: 20px
+            color: $s-co
+            text-transform: uppercase
+            font-size: .9em
+            letter-spacing: 2px
+            transition: $tr
+            &:hover
+                background-color: $s-co
+                color: $p-co
+        .woocommerce-Address
+            -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.16)
+            -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.16)
+            box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.16)
+            border-radius: 60px 0 60px 0
+            padding: 2em
+            h3 
+                color: $s-co
+                font-size: 1em
+                text-transform: uppercase
+                display: block
+                width: 100%
+                letter-spacing: 1px
+            .edit
+                float: left
+                color: $s-co
+                text-decoration: underline
+                transition: $tr
+                &:hover
+                    color: $p-co
+        h3
+            color: $s-co
+            font-size: 1.3em
+            text-transform: uppercase
+            letter-spacing: 2px
+        .woocommerce-input-wrapper
+            width: 100% !important
+            input
+                height: 40px
+                border-radius: 7px
+                border: 1px solid $s-co
+                padding-left: .5em
+        .select2-selection
+            height: 40px
+            .select2-selection__rendered
+                font-size: .65em
+                line-height: 38px
+        #billing_email, #shipping_postcode
+            margin-bottom: 2em
+        .woocommerce-Input
+            height: 40px
+            border-radius: 7px
+            border: 1px solid $s-co
+            padding-left: .5em
+        .password-input
+            width: 100%
+        #password_2
+            margin-bottom: 2em
