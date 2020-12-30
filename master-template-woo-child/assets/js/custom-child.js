@@ -61,6 +61,7 @@ jQuery(document).ready(function($){
     $('.quantity').prepend('<span class="lp-cantidad">Cantidad</span>');
     $('.woocommerce-MyAccount-content').append('<img src="http://localhost/lopez-publicidad/wp-content/uploads/2020/12/Vector-1.png" alt="" class="img-account-bg">');
     $('.woocommerce-MyAccount-navigation').append('<img src="http://localhost/lopez-publicidad/wp-content/uploads/2020/12/logo-cortado.png" alt="" class="img-nav-account-bg">');
+    $('.archive .woocommerce-products-header__title').html('CATÁLOGO');
     
     $('.widget_product_categories .product-categories .cat-parent a').first().append('<i class="fas fa-sort-down ml-2"></i>');
 

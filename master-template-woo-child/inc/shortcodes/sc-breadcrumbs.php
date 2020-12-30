@@ -4,7 +4,7 @@ if(!function_exists('lp_breadcrumbs_func')){
     function lp_breadcrumbs_func(){
         ob_start();
         ?>
-            <div class="lp-breadcrumbs mb-5" typeof="BreadcrumbList" vocab="http://schema.org/">
+            <div class="lp-breadcrumbs" typeof="BreadcrumbList" vocab="http://schema.org/">
                 <div class="container">
                     <?php 
                         if (function_exists('bcn_display')) {

@@ -1,0 +1,87 @@
+.woocommerce-cart
+    .static-header
+        position: absolute
+        width: 100%
+        background-color: transparent
+    .woocommerce-cart-form
+        .shop_table
+            border: 1px solid $s-co
+            padding: 1em 2em
+            .product-name, .product-price, .product-quantity, .product-subtotal
+                color: $s-co
+            td
+                border-top: 1px solid $s-co
+            .woocommerce-Price-amount
+                font-family:  $primary-font__book !important
+                color: $s-co
+                .woocommerce-Price-currencySymbol
+                    font-family:  $primary-font__book !important
+                    color: $s-co
+            .lp-cantidad
+                display: none
+            .product-name
+                a
+                    color: $s-co
+                    transition: $tr
+                    &:hover
+                        color: $p-co
+            .actions
+                padding-top: 1em
+                .coupon
+                    #coupon_code
+                        width: 50% !important
+                        border: 1px solid $s-co
+                        border-radius: 10px
+                    button
+                        background-color: #727376 !important
+                        text-transform: uppercase
+                        color: $bl
+                        font-size: .85em
+                        letter-spacing: 2px
+                        height: 38px
+                        border-radius: 10px
+                        transition: $tr
+                        &:hover
+                            background-color: $s-co !important
+                            color: $bl !important
+                button
+                    background-color: $s-co !important
+                    color: $bl
+                    text-transform: uppercase
+                    height: 38px !important
+                    border-radius: 10px !important
+                    font-size: .85em
+                    letter-spacing: 2px
+                    transition: $tr
+                    &:hover
+                        background-color: $p-co !important
+                        color: $s-co !important
+    .cart_totals
+        h2
+            color: $s-co
+        .shop_table
+            border: 1px solid $s-co
+            padding: 1em 2em
+            background-color: #f5f5f5
+            padding: 1em !important
+            .product-name, .product-price, .product-quantity, .product-subtotal
+                color: $s-co
+            .order-total
+                th, td
+                    border-top: 1px solid $s-co !important
+            .cart-subtotal, .woocommerce-Price-amount, .woocommerce-Price-currencySymbol, .order-total
+                font-family:  $primary-font__book !important
+                color: $s-co
+        .checkout-button
+            background-color: $p-co !important
+            height: 50px
+            padding: 1em !important
+            text-transform: uppercase
+            font-size: 1em !important
+            letter-spacing: 3px
+            color: $s-co !important
+            border-radius: 30px !important
+            transition: $tr
+            &:hover
+                background-color: $s-co !important
+                color: $p-co !important

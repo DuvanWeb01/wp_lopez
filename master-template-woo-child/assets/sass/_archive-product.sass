@@ -65,3 +65,24 @@
     z-index: -1
 #container-page
     position: relative
+
+.archive
+    .woocommerce-result-count, .woocommerce-ordering
+        display: none
+    .woocommerce-products-header__title
+        font-weight: 700
+        text-align: center
+        letter-spacing: 15px
+        color: $s-co
+        position: relative
+        margin-bottom: 2em
+        &::before
+            content: ''
+            position: absolute
+            bottom: 0
+            width: 400px
+            height: 2px
+            background-color: $p-co
+            left: 0
+            right: 0
+            margin: auto

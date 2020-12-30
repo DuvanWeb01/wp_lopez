@@ -5,7 +5,7 @@
 }
 
 /*Font Futura Md BT*/
-.title-slider, .p-title h4, .lp-tipos__title, .p-title h3, .p-title div, .lp-home-a__list a, .lp-carousel__title, .widget-title, .lp-link, .lp-card-vallas__title, .wcqb_button, .single_add_to_cart_button, .price dbi, .product_title, .u-column1 h2, .u-column2 h2, .woocommerce-MyAccount-navigation a, .sub-heading-section h1, .woocommerce-Address h3, .woocommerce-Address .edit, .woocommerce-MyAccount-content h3 {
+.title-slider, .p-title h4, .lp-tipos__title, .p-title h3, .p-title div, .lp-home-a__list a, .lp-carousel__title, .widget-title, .lp-link, .lp-card-vallas__title, .wcqb_button, .single_add_to_cart_button, .price dbi, .product_title, .u-column1 h2, .u-column2 h2, .woocommerce-MyAccount-navigation a, .sub-heading-section h1, .woocommerce-Address h3, .woocommerce-Address .edit, .woocommerce-MyAccount-content h3, .woocommerce-products-header__title, .actions button, .cart_totals h2, .checkout-button {
   font-family: "futuramedium" !important;
 }
 
@@ -15,7 +15,7 @@
 }
 
 /*Font Futura Bk BT*/
-p, input, textarea, .top-footer a, #lp-contact ul a, #lp-beneficios ul span, .lp-product__title, .lp-product__sku, .lp-cantidad, .variations select, .woocommerce-form__label-for-checkbox span, .woocommerce-message, .woocommerce-Message, .woocommerce-Address address {
+p, input, textarea, .top-footer a, #lp-contact ul a, #lp-beneficios ul span, .lp-product__title, .lp-product__sku, .lp-cantidad, .variations select, .woocommerce-form__label-for-checkbox span, .woocommerce-message, .woocommerce-Message, .woocommerce-Address address, .product-name, .product-price, .product-quantity, .product-subtotal {
   font-family: "futurabook" !important;
 }
 
@@ -831,6 +831,29 @@ p, input, textarea, .top-footer a, #lp-contact ul a, #lp-beneficios ul span, .lp
   position: relative;
 }
 
+.archive .woocommerce-result-count, .archive .woocommerce-ordering {
+  display: none;
+}
+.archive .woocommerce-products-header__title {
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 15px;
+  color: #202020;
+  position: relative;
+  margin-bottom: 2em;
+}
+.archive .woocommerce-products-header__title::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 400px;
+  height: 2px;
+  background-color: #FFF212;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
 .lp-information-product {
   background-color: #202020;
   padding: 2em 1em 2em 3em;
@@ -978,6 +1001,12 @@ p, input, textarea, .top-footer a, #lp-contact ul a, #lp-beneficios ul span, .lp
 }
 .single-product .lp-filter-bar {
   display: none !important;
+}
+
+.page-id-3 .static-header, .page-id-790 .static-header {
+  position: absolute;
+  width: 100%;
+  background-color: transparent;
 }
 
 .lp-politicas-section {
@@ -1407,6 +1436,110 @@ p, input, textarea, .top-footer a, #lp-contact ul a, #lp-beneficios ul span, .lp
 }
 .woocommerce-account .woocommerce-MyAccount-content #password_2 {
   margin-bottom: 2em;
+}
+
+.woocommerce-cart .static-header {
+  position: absolute;
+  width: 100%;
+  background-color: transparent;
+}
+.woocommerce-cart .woocommerce-cart-form .shop_table {
+  border: 1px solid #202020;
+  padding: 1em 2em;
+}
+.woocommerce-cart .woocommerce-cart-form .shop_table .product-name, .woocommerce-cart .woocommerce-cart-form .shop_table .product-price, .woocommerce-cart .woocommerce-cart-form .shop_table .product-quantity, .woocommerce-cart .woocommerce-cart-form .shop_table .product-subtotal {
+  color: #202020;
+}
+.woocommerce-cart .woocommerce-cart-form .shop_table td {
+  border-top: 1px solid #202020;
+}
+.woocommerce-cart .woocommerce-cart-form .shop_table .woocommerce-Price-amount {
+  font-family: "futurabook" !important;
+  color: #202020;
+}
+.woocommerce-cart .woocommerce-cart-form .shop_table .woocommerce-Price-amount .woocommerce-Price-currencySymbol {
+  font-family: "futurabook" !important;
+  color: #202020;
+}
+.woocommerce-cart .woocommerce-cart-form .shop_table .lp-cantidad {
+  display: none;
+}
+.woocommerce-cart .woocommerce-cart-form .shop_table .product-name a {
+  color: #202020;
+  transition: all 0.3s ease-in-out;
+}
+.woocommerce-cart .woocommerce-cart-form .shop_table .product-name a:hover {
+  color: #FFF212;
+}
+.woocommerce-cart .woocommerce-cart-form .shop_table .actions {
+  padding-top: 1em;
+}
+.woocommerce-cart .woocommerce-cart-form .shop_table .actions .coupon #coupon_code {
+  width: 50% !important;
+  border: 1px solid #202020;
+  border-radius: 10px;
+}
+.woocommerce-cart .woocommerce-cart-form .shop_table .actions .coupon button {
+  background-color: #727376 !important;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 0.85em;
+  letter-spacing: 2px;
+  height: 38px;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.woocommerce-cart .woocommerce-cart-form .shop_table .actions .coupon button:hover {
+  background-color: #202020 !important;
+  color: #ffffff !important;
+}
+.woocommerce-cart .woocommerce-cart-form .shop_table .actions button {
+  background-color: #202020 !important;
+  color: #ffffff;
+  text-transform: uppercase;
+  height: 38px !important;
+  border-radius: 10px !important;
+  font-size: 0.85em;
+  letter-spacing: 2px;
+  transition: all 0.3s ease-in-out;
+}
+.woocommerce-cart .woocommerce-cart-form .shop_table .actions button:hover {
+  background-color: #FFF212 !important;
+  color: #202020 !important;
+}
+.woocommerce-cart .cart_totals h2 {
+  color: #202020;
+}
+.woocommerce-cart .cart_totals .shop_table {
+  border: 1px solid #202020;
+  padding: 1em 2em;
+  background-color: #f5f5f5;
+  padding: 1em !important;
+}
+.woocommerce-cart .cart_totals .shop_table .product-name, .woocommerce-cart .cart_totals .shop_table .product-price, .woocommerce-cart .cart_totals .shop_table .product-quantity, .woocommerce-cart .cart_totals .shop_table .product-subtotal {
+  color: #202020;
+}
+.woocommerce-cart .cart_totals .shop_table .order-total th, .woocommerce-cart .cart_totals .shop_table .order-total td {
+  border-top: 1px solid #202020 !important;
+}
+.woocommerce-cart .cart_totals .shop_table .cart-subtotal, .woocommerce-cart .cart_totals .shop_table .woocommerce-Price-amount, .woocommerce-cart .cart_totals .shop_table .woocommerce-Price-currencySymbol, .woocommerce-cart .cart_totals .shop_table .order-total {
+  font-family: "futurabook" !important;
+  color: #202020;
+}
+.woocommerce-cart .cart_totals .checkout-button {
+  background-color: #FFF212 !important;
+  height: 50px;
+  padding: 1em !important;
+  text-transform: uppercase;
+  font-size: 1em !important;
+  letter-spacing: 3px;
+  color: #202020 !important;
+  border-radius: 30px !important;
+  transition: all 0.3s ease-in-out;
+}
+.woocommerce-cart .cart_totals .checkout-button:hover {
+  background-color: #202020 !important;
+  color: #FFF212 !important;
 }
 
 /*# sourceMappingURL=custom-style.css.map */
