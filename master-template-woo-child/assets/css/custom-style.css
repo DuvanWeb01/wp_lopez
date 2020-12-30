@@ -39,6 +39,13 @@ p, input, textarea, .top-footer a, #lp-contact ul a, #lp-beneficios ul span, .lp
   margin: 0 auto;
 }
 
+.title-section {
+  color: #202020;
+  letter-spacing: 12px;
+  font-family: "futuramedium";
+  font-weight: bold;
+}
+
 .bottom-header .box-buttons-wc {
   display: none;
 }
@@ -1540,6 +1547,53 @@ p, input, textarea, .top-footer a, #lp-contact ul a, #lp-beneficios ul span, .lp
 .woocommerce-cart .cart_totals .checkout-button:hover {
   background-color: #202020 !important;
   color: #FFF212 !important;
+}
+
+.lp-gallery-archive__item {
+  height: 350px;
+  overflow: hidden;
+  border-top-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+  position: relative;
+  margin-bottom: 2em;
+}
+.lp-gallery-archive__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.lp-gallery-archive__item figure {
+  margin: 0;
+  height: 100%;
+}
+.lp-gallery-archive__item figure figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #202020;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  padding: 2em;
+}
+.lp-gallery-archive__item figure figcaption:hover {
+  opacity: 1;
+}
+.lp-gallery-archive__item__brand {
+  max-width: 200px;
+  height: auto !important;
+  margin-bottom: 2em;
+}
+.lp-gallery-archive__item__name {
+  font-family: "futuramedium";
+  color: rgba(255, 255, 255, 0.8);
+  text-transform: uppercase;
+  font-size: 1.3em;
 }
 
 /*# sourceMappingURL=custom-style.css.map */
