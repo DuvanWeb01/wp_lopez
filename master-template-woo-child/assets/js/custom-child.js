@@ -56,6 +56,16 @@ jQuery(document).ready(function($){
       dots: false,
     });
 
+    $('.lp-proyects__carousel').slick({
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
+      nextArrow: '<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>',
+      autoplay: true,
+      dots: false,
+    });
+
     $('#lp-galeria a').append('<i class="far fa-eye"></i>');
     $('.add_to_wishlist').html('<i class="far fa-heart"></i>');
     $('.quantity').prepend('<span class="lp-cantidad">Cantidad</span>');

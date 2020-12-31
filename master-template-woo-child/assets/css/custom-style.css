@@ -5,7 +5,7 @@
 }
 
 /*Font Futura Md BT*/
-.title-slider, .p-title h4, .lp-tipos__title, .p-title h3, .p-title div, .lp-home-a__list a, .lp-carousel__title, .widget-title, .lp-link, .lp-card-vallas__title, .wcqb_button, .single_add_to_cart_button, .price dbi, .product_title, .u-column1 h2, .u-column2 h2, .woocommerce-MyAccount-navigation a, .sub-heading-section h1, .woocommerce-Address h3, .woocommerce-Address .edit, .woocommerce-MyAccount-content h3, .woocommerce-products-header__title, .actions button, .cart_totals h2, .checkout-button {
+.title-slider, .p-title h4, .lp-tipos__title, .p-title h3, .p-title div, .lp-home-a__list a, .lp-carousel__title, .widget-title, .lp-link, .lp-card-vallas__title, .wcqb_button, .single_add_to_cart_button, .price dbi, .product_title, .u-column1 h2, .u-column2 h2, .woocommerce-MyAccount-navigation a, .sub-heading-section h1, .woocommerce-Address h3, .woocommerce-Address .edit, .woocommerce-MyAccount-content h3, .woocommerce-products-header__title, .actions button, .cart_totals h2, .checkout-button, .lp-proyects__title, .lp-proyects__client, .lp-proyects__date, .lp-proyects__title-related {
   font-family: "futuramedium" !important;
 }
 
@@ -15,7 +15,7 @@
 }
 
 /*Font Futura Bk BT*/
-p, input, textarea, .top-footer a, #lp-contact ul a, #lp-beneficios ul span, .lp-product__title, .lp-product__sku, .lp-cantidad, .variations select, .woocommerce-form__label-for-checkbox span, .woocommerce-message, .woocommerce-Message, .woocommerce-Address address, .product-name, .product-price, .product-quantity, .product-subtotal {
+p, input, textarea, .top-footer a, #lp-contact ul a, #lp-beneficios ul span, .lp-product__title, .lp-product__sku, .lp-cantidad, .variations select, .woocommerce-form__label-for-checkbox span, .woocommerce-message, .woocommerce-Message, .woocommerce-Address address, .product-name, .product-price, .product-quantity, .product-subtotal, .item-proyects__title {
   font-family: "futurabook" !important;
 }
 
@@ -1540,6 +1540,198 @@ p, input, textarea, .top-footer a, #lp-contact ul a, #lp-beneficios ul span, .lp
 .woocommerce-cart .cart_totals .checkout-button:hover {
   background-color: #202020 !important;
   color: #FFF212 !important;
+}
+
+.lp-proyects__info {
+  background-color: #1e1e1e;
+  padding: 4em 0 4em 3em !important;
+  border-radius: 0 0 0 60px;
+  position: relative;
+}
+.lp-proyects__info::before {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 100%;
+  right: -490px;
+  background-color: #1e1e1e;
+  top: 0;
+}
+.lp-proyects__title {
+  color: #ffffff;
+  line-height: 1em;
+  letter-spacing: 3px;
+}
+.lp-proyects__client {
+  color: #FFF212;
+  line-height: 1em;
+  letter-spacing: 3px;
+}
+.lp-proyects__line {
+  display: block;
+  width: 90%;
+  height: 2px;
+  background-color: #FFF212;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.lp-proyects__date {
+  color: #FFF212;
+  letter-spacing: 3px;
+  text-transform: capitalize;
+}
+.lp-proyects__desc {
+  color: #ffffff;
+  margin-top: 1em;
+}
+.lp-proyects__related {
+  padding-top: 5em;
+  padding-bottom: 4em;
+}
+.lp-proyects__title-related {
+  text-transform: uppercase;
+  letter-spacing: 20px;
+  color: #202020;
+  margin-bottom: 1em;
+}
+.lp-proyects__carousel .slick-slider {
+  margin: 0 -35px;
+}
+.lp-proyects__carousel .slick-slide {
+  padding: 30px;
+  position: relative;
+}
+.lp-proyects__carousel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 60px 0 60px 0;
+}
+.lp-proyects__carousel .item-proyects {
+  overflow: hidden;
+}
+.lp-proyects__carousel .item-proyects__cont {
+  border-radius: 60px 0 60px 0;
+  height: 360px;
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.16);
+  position: relative !important;
+}
+.lp-proyects__carousel .item-proyects__cont:hover .item-proyects__caption {
+  transform: translateX(0);
+}
+.lp-proyects__carousel .item-proyects__caption {
+  position: absolute;
+  width: 311px;
+  height: 316px;
+  background-color: #202020;
+  top: 17px;
+  left: 0;
+  border-radius: 60px 0 60px 0;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  padding: 2em;
+  transform: translateX(-400px);
+  transition: all 0.3s ease-in-out;
+}
+.lp-proyects__carousel .item-proyects__title {
+  color: #ffffff;
+  font-size: 1em;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 1em;
+}
+.lp-proyects__carousel .item-proyects__img {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 2em;
+}
+.lp-proyects__carousel .slick-next {
+  position: absolute;
+  right: -50px;
+  top: 45%;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 2px solid #202020;
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+  color: #202020;
+}
+.lp-proyects__carousel .slick-next:hover {
+  background-color: #202020;
+  color: #ffffff;
+}
+.lp-proyects__carousel .slick-prev {
+  position: absolute;
+  left: -50px;
+  top: 45%;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 2px solid #202020;
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+  color: #202020;
+}
+.lp-proyects__carousel .slick-prev:hover {
+  background-color: #202020;
+  color: #ffffff;
+}
+
+/*GALERIA*/
+.lp-gallery-grid {
+  padding: 3em 2em 0 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  height: 520px;
+  grid-gap: 20px;
+  grid-column-gap: 70px;
+  width: 100%;
+}
+.lp-gallery-grid__item {
+  grid-column: span 1;
+  grid-row: span 1;
+  height: auto;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.lp-gallery-grid__item figure {
+  margin: 0;
+  position: relative;
+  height: 100%;
+}
+.lp-gallery-grid__item figure figcaption {
+  background: rgba(255, 242, 18, 0.78);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: black;
+  font-size: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.lp-gallery-grid__item figure figcaption:hover {
+  opacity: 1;
+}
+.lp-gallery-grid__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.lp-gallery-grid__item:first-child {
+  grid-column: span 2;
+  grid-row: span 3;
+  border-top-left-radius: 60px;
+  border-bottom-right-radius: 60px;
 }
 
 /*# sourceMappingURL=custom-style.css.map */
