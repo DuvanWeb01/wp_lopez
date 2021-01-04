@@ -1648,6 +1648,9 @@ p, input, textarea, .top-footer a, #lp-contact ul a, #lp-beneficios ul span, .lp
   color: #202020;
   margin-bottom: 1em;
 }
+.lp-proyects__customer-logo {
+  max-width: 150px;
+}
 .lp-proyects__carousel .slick-slider {
   margin: 0 -35px;
 }
@@ -1657,12 +1660,19 @@ p, input, textarea, .top-footer a, #lp-contact ul a, #lp-beneficios ul span, .lp
 }
 .lp-proyects__carousel img {
   width: 100%;
-  height: 100%;
+  height: 316px;
   object-fit: cover;
   border-radius: 60px 0 60px 0;
 }
 .lp-proyects__carousel .item-proyects {
   overflow: hidden;
+}
+.lp-proyects__carousel .item-proyects h5 {
+  color: white;
+  font-size: 1.5em;
+  font-family: "futuramedium";
+  font-weight: normal;
+  text-align: center;
 }
 .lp-proyects__carousel .item-proyects__cont {
   border-radius: 60px 0 60px 0;
@@ -1700,6 +1710,9 @@ p, input, textarea, .top-footer a, #lp-contact ul a, #lp-beneficios ul span, .lp
   width: 80%;
   margin: auto;
   margin-bottom: 2em;
+  max-width: 200px;
+  border-radius: 0px;
+  height: auto;
 }
 .lp-proyects__carousel .slick-next {
   position: absolute;
