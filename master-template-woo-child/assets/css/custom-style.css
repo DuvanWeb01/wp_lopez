@@ -1801,4 +1801,46 @@ p, input, textarea, .top-footer a, #lp-contact ul a, #lp-beneficios ul span, .lp
   border-bottom-right-radius: 60px;
 }
 
+.mt-collapse-item {
+  display: none !important;
+}
+.mt-collapse-item.collapse-active {
+  display: flex !important;
+}
+.mt-collapse-item__content {
+  border-top-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+}
+.mt-collapse-item__carousel .custom-slick-arrow {
+  border: 1px solid black;
+  background: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: all 0.3s;
+  position: absolute;
+  top: calc(50% - 20px);
+  z-index: 2;
+  outline: 0px;
+}
+.mt-collapse-item__carousel .custom-slick-arrow:hover {
+  color: white;
+  background: black;
+}
+.mt-collapse-item__carousel .custom-slick-arrow.custom-slick-next {
+  right: -20px;
+}
+.mt-collapse-item__carousel .custom-slick-arrow.custom-slick-prev {
+  left: -20px;
+}
+
+.mt-menu-tab__link {
+  color: #727376;
+  text-transform: uppercase;
+  padding: 1em 3em !important;
+}
+.mt-menu-tab__link.active, .mt-menu-tab__link:hover {
+  color: black;
+}
+
 /*# sourceMappingURL=custom-style.css.map */

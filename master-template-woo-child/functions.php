@@ -21,6 +21,7 @@ add_action( 'wp_enqueue_scripts', 'enqueue_styles_child_theme' );
 
 
 require "inc/custom-post-types/cpt-wpn-proyectos.php";
+require "inc/custom-post-types/cpt-lp-vallas.php";
 require "inc/custom-taxonomies/tax-lp-customer.php";
 require "inc/shortcodes/sc-products-home.php";
 require "inc/shortcodes/sc-projects-home.php";
@@ -30,14 +31,15 @@ require "inc/shortcodes/sc-vallas-obras.php";
 require "inc/shortcodes/sc-vallas-otras.php";
 require "inc/shortcodes/sc-breadcrumbs.php";
 require "inc/shortcodes/sc-subheader-shop.php";
+require "inc/shortcodes/sc-lp-vallas-tab.php";
 require "inc/custom-woocommerce.php";
 
-// add_action( 'pre_get_posts', 'add_my_post_types_to_query' );
+add_action( 'pre_get_posts', 'add_my_post_types_to_query' );
 
-// function add_my_post_types_to_query( $query ) {
-// 	if ( (is_single() || is_home() || is_category() ) && $query->is_main_query() )
-// 		$query->set( 'post_type', array( 'post', 'product', 'Proyectos' ) );
+function add_my_post_types_to_query( $query ) {
+	if ( (is_single() || is_home() || is_category() ) && $query->is_main_query() )
+		$query->set( 'post_type', array( 'post', 'product', 'lp_vallas', 'proyectos' ) );
 
-// 	return $query;
-// }
+	return $query;
+}
 

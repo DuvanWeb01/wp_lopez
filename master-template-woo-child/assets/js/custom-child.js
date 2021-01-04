@@ -79,4 +79,23 @@ jQuery(document).ready(function($){
       e.preventDefault();
       $(this).parent().next().slideToggle();
     })
+
+    //   MASTER TABS
+    $('.mt-collapse-item').first().addClass('collapse-active');
+    $('.mt-menu-tab__link').first().addClass('active');
+    
+    $('.mt-menu-tab__link').click(function(e){
+      e.preventDefault();
+      $('.mt-menu-tab__link').removeClass('active');
+      $(this).addClass('active');
+      $target = $(this).attr('data-target');
+      $(".mt-collapse-item").removeClass('collapse-active');
+      $(`#${$target}`).addClass('collapse-active');
+    })
+    
+    //   Slick Vallas
+    $('.mt-collapse-item__carousel').slick({
+      prevArrow: '<button type="button" class="custom-slick-arrow custom-slick-prev"><i class="fas fa-angle-left"></i></button>',
+      nextArrow: '<button type="button" class="custom-slick-arrow custom-slick-next"><i class="fas fa-angle-right"></i></button>'
+    });
 });
