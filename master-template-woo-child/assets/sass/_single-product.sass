@@ -118,4 +118,37 @@
         display: none
     .lp-filter-bar
         display: none !important
-    
+.single-product
+    .product
+        .images
+            margin-top: 3em
+            li
+                margin-bottom: 1em !important
+                img
+                    border-radius: 30px 0 30px 0                    
+            .zoom
+                margin-right: 2em
+                img
+                    height: 426px
+                    object-fit: cover
+                    height: 480px
+                    border-radius: 60px 0 60px 0
+                .wpgis-popup
+                    width: 390px
+                    height: 100%
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    left: 0
+                    top: 0
+                    border-radius: 60px 0 60px 0
+                    &:hover
+                        background: rgba(#FFF212, .78)
+                    &::before
+                        content: '\f06e'
+                        font-size: 40px
+                        color: #000
+                        opacity: 0
+                        transition: $tr
+                    &:hover::before
+                        opacity: 1
