@@ -91,6 +91,9 @@ jQuery(document).ready(function($){
       $target = $(this).attr('data-target');
       $(".mt-collapse-item").removeClass('collapse-active');
       $(`#${$target}`).addClass('collapse-active');
+
+      // Soluciona error de carga de los sliders
+      $(`#${$target} .mt-collapse-item__carousel`).slick('refresh');
     })
     
     //   Slick Vallas

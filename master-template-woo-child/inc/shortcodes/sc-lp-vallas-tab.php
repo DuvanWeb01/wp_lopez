@@ -19,16 +19,18 @@ if(!function_exists('lp_vallas_tab_func')){
 
             <div class="mt-collapse p-4">
                 <?php while($vallas_query->have_posts()): $vallas_query->the_post(); $info_post = get_post();?>
+                    <?php 
+                        $galeria_vallas = get_field('galeria_vallas');
+                        $galeria_vallas_explode = explode(',', $galeria_vallas);
+                    ?>
                     <div class="mt-collapse-item row align-items-center" id="<?php echo $info_post->post_name; ?>">
                             <div class="col-12 col-md-7 mt-collapse-item__gallery p-5">
                             <div class="mt-collapse-item__carousel slick-theme">
-                                <div class="item">
-                                <img src="https://fotos.subefotos.com/cfeb71e653df36e5356cb5f39e245611o.png" alt="" class="img-fluid">
-                                </div>
-                                
-                                <div class="item">
-                                <img src="https://fotos.subefotos.com/cfeb71e653df36e5356cb5f39e245611o.png" alt="" class="img-fluid">
-                                </div>
+                                <?php foreach($galeria_vallas_explode as $item_galeria): ?>
+                                    <div class="item">
+                                        <?php echo wp_get_attachment_image( $item_galeria, 'full', false, array('class' => 'img-fluid') ); ?>
+                                    </div>
+                                <?php endforeach; ?>
                             </div>
                             </div>
                             <div class="col-12 col-md-5 mt-collapse-item__content p-5 shadow">

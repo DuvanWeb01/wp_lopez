@@ -1811,6 +1811,11 @@ p, input, textarea, .top-footer a, #lp-contact ul a, #lp-beneficios ul span, .lp
   border-top-left-radius: 60px;
   border-bottom-right-radius: 60px;
 }
+.mt-collapse-item__content__title {
+  font-family: "futuramedium";
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
 .mt-collapse-item__carousel .custom-slick-arrow {
   border: 1px solid black;
   background: white;
@@ -1838,6 +1843,8 @@ p, input, textarea, .top-footer a, #lp-contact ul a, #lp-beneficios ul span, .lp
   color: #727376;
   text-transform: uppercase;
   padding: 1em 3em !important;
+  font-size: 0.8em;
+  letter-spacing: 3px;
 }
 .mt-menu-tab__link.active, .mt-menu-tab__link:hover {
   color: black;
