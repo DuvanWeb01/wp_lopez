@@ -1,0 +1,41 @@
+.mt-collapse
+  &-item
+    display: none !important
+    &.collapse-active
+      display: flex !important
+    &__content
+      border-top-left-radius: 60px
+      border-bottom-right-radius: 60px
+      &__title
+        font-family: $primary-font__medium
+        text-transform: uppercase
+        font-size: 1.5em
+    &__carousel
+      .custom-slick-arrow
+        border: 1px solid black
+        background: white
+        width: 40px
+        height: 40px
+        border-radius: 50%
+        transition: all .3s
+        position: absolute
+        top: calc(50% - 20px)
+        z-index: 2
+        outline: 0px
+        &:hover
+          color: white
+          background: black
+        &.custom-slick-next
+          right: -20px
+        &.custom-slick-prev
+          left: -20px
+        
+.mt-menu-tab
+  &__link
+    color: #727376
+    text-transform: uppercase
+    padding: 1em 3em !important
+    font-size: .8em
+    letter-spacing: 3px
+    &.active, &:hover
+      color: black
