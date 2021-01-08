@@ -26,7 +26,7 @@ jQuery(document).ready(function($){
           {
             breakpoint: 480,
             settings: {
-              slidesToShow: 2,
+              slidesToShow: 1,
               slidesToScroll: 1
             }
           }
@@ -44,6 +44,14 @@ jQuery(document).ready(function($){
         nextArrow: '<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>',
         autoplay: true,
         dots: true,
+        responsive: [
+          {
+            breakpoint: 480,
+            settings: {
+              dots: false,
+            }
+          }
+        ]
     });
 
     $('.lp-tipos__car').slick({
@@ -64,12 +72,21 @@ jQuery(document).ready(function($){
       nextArrow: '<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>',
       autoplay: true,
       dots: false,
+      responsive: [
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+          }
+        }
+      ]
     });
 
     $('#lp-galeria a').append('<i class="far fa-eye"></i>');
     $('.add_to_wishlist').html('<i class="far fa-heart"></i>');
     $('.quantity').prepend('<span class="lp-cantidad">Cantidad</span>');
     $('.woocommerce-MyAccount-content').append('<img src="http://localhost/lopez-publicidad/wp-content/uploads/2020/12/Vector-1.png" alt="" class="img-account-bg">');
+    $('.f-compra').append('<img src="http://localhost/lopez-publicidad/wp-content/uploads/2020/12/Vector-1.png" alt="" class="img-account-bg">');
     $('.woocommerce-MyAccount-navigation').append('<img src="http://localhost/lopez-publicidad/wp-content/uploads/2020/12/logo-cortado.png" alt="" class="img-nav-account-bg">');
     $('.archive .woocommerce-products-header__title').html('CATÁLOGO');
     

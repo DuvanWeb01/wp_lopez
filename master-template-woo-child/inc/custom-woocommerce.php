@@ -23,7 +23,7 @@ function add_description_and_text(){
 	$name_product = $product->get_name();
 	$description = $product->get_description();
 	//$product_url = get_permalink( $product->get_id() );
-	$product_url = "http://univercity.com.co/demo/rv/?add-to-cart=" . $product->get_id();
+	$product_url = get_home_url()."/?add-to-cart=" . $product->get_id();
 	$img_product = $product->get_image();
 	$sku = $product->get_sku();
 
@@ -67,3 +67,89 @@ function hello_world(){
 
 
 add_action( 'woocommerce_before_main_content', 'hello_world' );
+
+// Orden campos Checkout
+add_filter("woocommerce_checkout_fields", "custom_override_checkout_fields", 1);
+function custom_override_checkout_fields($fields) {
+	$fields['billing']['billing_email']['priority'] = 1;
+    $fields['billing']['billing_first_name']['priority'] = 2;
+	$fields['billing']['billing_last_name']['priority'] = 3;
+	$fields['billing']['billing_state']['priority'] = 4;
+	$fields['billing']['billing_city']['priority'] = 5;
+	$fields['billing']['billing_address_1']['priority'] = 6;
+	$fields['billing']['billing_address_2']['priority'] = 7;
+	$fields['billing']['billing_phone']['priority'] = 8;
+    $fields['billing']['billing_company']['priority'] = 9;
+    $fields['billing']['billing_country']['priority'] = 10;
+    
+    
+    
+    $fields['billing']['billing_postcode']['priority'] = 11;
+    
+    
+    return $fields;
+}
+
+add_filter( 'woocommerce_default_address_fields', 'custom_override_default_locale_fields' );
+function custom_override_default_locale_fields( $fields ) {
+	$fields['state']['priority'] = 4;
+    $fields['city']['priority'] = 5;
+    $fields['address_1']['priority'] = 6;
+    $fields['address_2']['priority'] = 7;
+    return $fields;
+}
+
+// Nuevo campo Checkout
+add_filter('woocommerce_billing_fields', 'custom_woocommerce_billing_fields');
+function custom_woocommerce_billing_fields($fields)
+{
+
+    $fields['billing_options'] = array(
+        'label' => __('Número de documento', 'woocommerce'), // Add custom field label
+        'placeholder' => _x('N° de documento*', 'placeholder', 'woocommerce'), // Add custom field placeholder
+        'required' => true, // if field is required or not
+        'clear' => false, // add clear or not
+        'type' => 'text', // add field type
+        'class' => array('my-css')    // add class name
+    );
+
+    return $fields;
+}
+
+function claserama_edit_checkout_fields($fields){
+	unset($fields['billing']['billing_country']);
+	unset($fields['billing']['billing_postcode']);
+	unset($fields['billing']['billing_company']);
+	return $fields;
+}
+add_filter('woocommerce_checkout_fields','claserama_edit_checkout_fields');
+
+add_filter( 'woocommerce_checkout_fields' , 'override_billing_checkout_fields', 20, 1 );
+function override_billing_checkout_fields( $fields ) {
+
+	$fields['billing']['billing_email']['placeholder'] = 'Correo electrónico*';
+	$fields['billing']['billing_first_name']['placeholder'] = 'Nombre*';
+	$fields['billing']['billing_last_name']['placeholder'] = 'Apellidos*';
+	$fields['billing']['billing_state']['placeholder'] = 'Departamento';
+	$fields['billing']['billing_city']['placeholder'] = 'Ciudad / Municipio';
+	$fields['billing']['billing_address_1']['placeholder'] = 'Dirección recidencia*';
+	$fields['billing']['billing_address_2']['placeholder'] = 'Apto, casa, local';
+	$fields['billing']['billing_phone']['placeholder'] = 'Celular o teléfono*';
+	
+
+	return $fields;
+}
+
+add_filter('woocommerce_checkout_fields', 'custom_checkout_billing_fields', 20, 1);
+function custom_checkout_billing_fields($fields)
+{
+$domain = 'woocommerce';
+
+// Cambiar tamaño campos
+
+$fields['billing']['billing_state']['class'] = array('form-row-first'); //  50%
+$fields['billing']['billing_city']['class'] = array('form-row-last'); //  50%
+
+return $fields;
+}
+
